@@ -111,7 +111,31 @@ function createMap(earthquakes) {
   L.control.layers(baseMaps, overlayMaps, {
     collapsed: false
   }).addTo(myMap);
-}
+
+  var legend = L.control({ position: "bottomright" });
+  legend.onAdd = function(map) {
+      var div = L.DomUtil.create("div", "info legend");
+      magnitudes = [0, 1, 2, 3, 4, 5];
+      labels = [];
+      legendInfo = "<strong>Magnitude</strong>";
+
+      div.innerHTML = legendInfo;
+      // push to labels array as list item
+      for (var i = 0; i < magnitudes.length; i++) {
+          labels.push('<li style="background-color:' + markerColor(magnitudes[i] + 1) + '"> <span>' + magnitudes[i] + (magnitudes[i + 1]
+               ? '&ndash;' + magnitudes[i + 1] + '' : '+') + '</span></li>');
+      }
+
+      // add label items to the div under the <ul> tag
+      div.innerHTML += "<ul>" + labels.join("") + "</ul>";
+
+      return div;
+  };
+
+  // Add legend to the map
+  legend.addTo(myMap);
+
+};
 
 
 
