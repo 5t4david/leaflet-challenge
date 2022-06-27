@@ -32,7 +32,7 @@ function createFeatures(earthquakeData) {
   // Give each feature a popup describing the place and time of the earthquake
   function onEachFeature(feature, layer) {
     layer.bindPopup("<h3>" + feature.properties.place +
-      "</h3><hr><p>" + new Date(feature.properties.time) + "</p>");
+      "</h3><hr><p>" + new Date(feature.properties.time) + "</p>" + "</h3><hr><p>" + "Magnitude: " + (feature.properties.mag) + "</p>");
   }
 
   // Create a GeoJSON layer containing the features array on the earthquakeData object
@@ -118,25 +118,17 @@ function createMap(earthquakes) {
       magnitudes = [0, 1, 2, 3, 4, 5];
       labels = [];
       legendInfo = "<strong>Magnitude</strong>";
-
       div.innerHTML = legendInfo;
       // push to labels array as list item
       for (var i = 0; i < magnitudes.length; i++) {
           labels.push('<li style="background-color:' + markerColor(magnitudes[i] + 1) + '"> <span>' + magnitudes[i] + (magnitudes[i + 1]
                ? '&ndash;' + magnitudes[i + 1] + '' : '+') + '</span></li>');
       }
-
       // add label items to the div under the <ul> tag
       div.innerHTML += "<ul>" + labels.join("") + "</ul>";
-
       return div;
   };
-
   // Add legend to the map
   legend.addTo(myMap);
 
 };
-
-
-
-// Define a color function that sets the colour of a marker based on earthquake mag
