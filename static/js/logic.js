@@ -86,9 +86,10 @@ function createMap(earthquakes) {
 
   // Define a baseMaps object to hold our base layers
   var baseMaps = {
+    "Dark Map": darkmap,
     "Satellite": satellite,
-    "Street Map": streetmap,
-    "Dark Map": darkmap
+    "Street Map": streetmap
+
   };
 
   // Create overlay object to hold our overlay layer
