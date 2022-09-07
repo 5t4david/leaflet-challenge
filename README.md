@@ -10,13 +10,13 @@ The USGS is interested in building a new set of tools that will allow them visua
 
 ### Before I Begin
 
-1.  Created a new repository for this project called `leaflet-challenge`. **Do not add this homework to an existing repository**.
+1.  I created a new repository for this project called `leaflet-challenge`. **Do not add this homework to an existing repository**.
 
-2.  Clone the new repository to my computer.
+2.  I cloned the new repository to my computer.
 
-3.  Inside my local git repository, i created a directory for the Leaflet challenge. Use the folder names to correspond to the challenges: **Leaflet-Step-1** and **Leaflet-Step-2**.
+3.  Inside my local git repository, i created a directory for the Leaflet challenge. I used the folder names to correspond to the challenges: **Leaflet-Step-1** and **Leaflet-Step-2**.
 
-4.  This homeworks utilizes both **html** and **Javascript** so be sure to add all the necessary files. These will be the main files to run for analysis.
+4.  This task utilizes both **html** and **Javascript** so be sure to add all the necessary files. These will be the main files to run for analysis.
 
 5.  I Pushed the above changes to GitHub or GitLab.
 
@@ -26,7 +26,7 @@ The USGS is interested in building a new set of tools that will allow them visua
 
 ![2-BasicMap](Images/2-BasicMap.png)
 
-my first task is to visualize an earthquake data set.
+My first task is to visualize an earthquake data set.
 
 1.  **Get my data set**
 
@@ -38,17 +38,14 @@ my first task is to visualize an earthquake data set.
 
 2.  **Import & Visualize the Data**
 
-    Create a map using Leaflet that plots all of the earthquakes from my data set based on their longitude and latitude.
+    I create a map using Leaflet that plots all of the earthquakes from my data set based on their longitude and latitude.
 
-    -   my data markers should reflect the magnitude of the earthquake by their size and and depth of the earth quake by color. Earthquakes with higher magnitudes should appear larger and earthquakes with greater depth should appear darker in color.
+    -   My data markers should reflect the magnitude of the earthquake by their size and and depth of the earth quake by color. Earthquakes with higher magnitudes should appear larger and earthquakes with greater depth should appear darker in color.
 
     -   **HINT** the depth of the earth can be found as the third coordinate for each earthquake.
 
-    -   Include popups that provide additional information about the earthquake when a marker is clicked.
+    -   I Included popups that provide additional information about the earthquake when a marker is clicked.
 
-    -   Create a legend that will provide context for my map data.
-
-    -   my visualization should look something like the map above.
-
+    -   I created a legend that will provide context for my map data.
 ------------------------------------------------------------------------
 # leaflet-challenge
